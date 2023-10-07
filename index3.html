@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>My Website</title>
+	<meta charset="UTF-8">
+	<link type='text/css' rel='stylesheet' href='styless.css' />
+	<title>My first Website</title>
+	<link rel="icon" type=image/jpg href="mands.jpg" />
+	</head>
+	<body>
+	<a name='top'></a>
+	<div class="header">
+	  <h1>My Website</h1>
+	  <p>A website created by me.</p>
+	</div>
+
+	<div class="navbar">
+	  <a href="index3.html">Home</a>
+	  <a href="movies.html" target='_self'>Movies</a>
+	  <a href="music.html">Musics</a>
+	  <a href="contact.html" class="right">Contact Me</a>
+	</div>
+
+	<div class="row">
+	  <div class="side">
+		<h2>About Me</h2>
+		<h5>I love Nature:</h5>
+		
+		
+		
+		<div class="slideshow-container" >
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="forest.jpeg" style="width:100%">
+		  <div class="text">Bridge</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="6.jpg" style="width:100%">
+		  <div class="text">Mountain</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="5.jpg" style="width:100%">
+		  <div class="text">Palm tree</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+		
+		
+		<p style='max-width:1000px align:left;' >My full name is Mohammad Sadegh Mahdavipour and I go to <a href='http://www.alavischool.ir' title='My school site' target="_blank"> Alavi high school</a></p>
+		<h3>My childhood :</h3>
+		<p>Here i was about 6</p>
+		<image src='first.jpg' style='width:100%' title="In Qeitarie park :)"/><br/><br/>
+		<image src='second.jpg' style='width:100%' title="In Shiraz city "/><br/>
+	  </div>
+	  <div class="main">
+	  	<h2>Here is where i live : </h2>
+		<h5>Tehran</h5>
+		<image src='tehran.jpg' style='width:100%' title='Tehran'/>
+		<p>Somthing about Tehran...</p>
+		<p>Tehran is the capital of Iran and Tehran Province. With a population of around 8.7 million in the city and 15 million in the larger metropolitan area of Greater Tehran, Tehran is the most populous city in Iran and Western Asia, and has the second-largest metropolitan area in the Middle East (after Cairo). It is ranked 24th in the world by the population of its metropolitan area</p>
+		<br>
+		<h2>My country :</h2>
+		<h5>Iran</h5>
+		<image src='iran.jpg' style='width:100%' title="Iran's flag "/>
+		<p>Something about Iran...</p>
+		<p>Iran also called Persia, and officially the Islamic Republic of Iran,it is a country in Western Asia. It is bordered to the northwest by Armenia and Azerbaijan, to the north by the Caspian Sea, to the northeast by Turkmenistan, to the east by Afghanistan, to the southeast by Pakistan, to the south by the Persian Gulf and the Gulf of Oman, and to the west by Turkey and Iraq. Iran covers an area of 1,648,195 km2 , with a population of 83 million. It is the second-largest country in the Middle East, and its capital and largest city is Tehran.</p>
+	  </div>
+	</div>
+	<a href='#top'style='text-align:center;'><img type='image/png' src='arrow2.png' title='Go Top!' style='width:50px;margin-left:48%'/></a>
+	<div class="footer">
+	  <h6>© 2021-2022</h6>
+	</div>
+	
+	</body>
+</html>
